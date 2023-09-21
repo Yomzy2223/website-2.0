@@ -25,7 +25,7 @@ export default function Footer() {
 										className={buttonVariants({
 											variant: "link",
 											className:
-												"!p-0 h-fit w-fit text-inherit text-xl",
+												"!p-0 h-fit w-fit text-current text-xl",
 										})}
 									>
 										{link.name}
