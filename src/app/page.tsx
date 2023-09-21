@@ -7,15 +7,15 @@ import React from "react";
 const HomePage = () => {
 	return (
 		<>
-			<div className="px-10 mb-10">
+			{/* <div className="px-10 mb-10">
 				Home page
-				{/* <PricingSection />
-				<TestimonialSection /> */}
+				<PricingSection />
+				<TestimonialSection />
 				<ContactSection />
 			</div>
 			<div>
 				<FooterSection />
-			</div>
+			</div> */}
 		</>
 	);
 };
