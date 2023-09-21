@@ -17,6 +17,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        gray3: "hsl(var(--gray3))",
+        gray4: "hsl(var(--gray4))",
+        gray5: "hsl(var(--gray5))",
+        gray6: "hsl(var(--gray6))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -25,10 +29,6 @@ module.exports = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          gray3: "hsl(var(--gray3))",
-          gray4: "hsl(var(--gray4))",
-          gray5: "hsl(var(--gray5))",
-          gray6: "hsl(var(--gray6))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

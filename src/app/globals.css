@@ -80,12 +80,6 @@
   }
 }
 
-@layer utilities {
-  .path-white {
-    fill: #fff;
-  }
-}
-
 .swiper-pagination {
   position: relative !important;
   bottom: 0 !important;
@@ -98,4 +92,9 @@
 
 .swiper-pagination-bullet-active {
   background-color: #00a2d4 !important;
+}
+
+.button-pattern {
+  background-image: url(../assets/images/button-pattern.png);
+  box-shadow: -3px 3px 3px #4f4f4f;
 }

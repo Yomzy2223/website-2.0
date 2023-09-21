@@ -1,52 +1,37 @@
-import businessPlanIcon from "@/assets/icons/business-plan.svg";
-import countryIcon from "@/assets/icons/country.svg";
-import payIcon from "@/assets/icons/pay.svg";
-import rocketIcon from "@/assets/icons/rocket.svg";
-import checkIcon from "@/assets/icons/check.svg";
+import BusinessPlanIcon from "@/assets/icons/businessPlan";
+import CountryIcon from "@/assets/icons/country";
+import PayIcon from "@/assets/icons/pay";
+import CheckIcon from "@/assets/icons/check";
 import nigeriaFlag from "@/assets/icons/nigeria-flag.svg";
+import RocketIcon from "@/assets/icons/rocket";
 
 export const steps = [
   {
     text: "Create account",
-    icon: rocketIcon,
+    icon: RocketIcon,
   },
   {
     text: "Select country",
-    icon: countryIcon,
+    icon: CountryIcon,
   },
   {
     text: "Select business plan",
-    icon: businessPlanIcon,
+    icon: BusinessPlanIcon,
   },
   {
     text: "Pay and fill your form",
-    icon: payIcon,
+    icon: PayIcon,
   },
   {
     text: "Get your documents",
-    icon: checkIcon,
+    icon: CheckIcon,
   },
 ];
 
-export const countries = [
-  {
-    name: "Nigeria",
-    flag: nigeriaFlag,
-  },
-  {
-    name: "Kenya",
-    flag: nigeriaFlag,
-  },
-  {
-    name: "Delaware",
-    flag: nigeriaFlag,
-  },
-  {
-    name: "UK",
-    flag: nigeriaFlag,
-  },
-  {
-    name: "Canada",
-    flag: nigeriaFlag,
-  },
+export const features = [
+  "Company registration",
+  "Company bank account",
+  "Company tax ID",
+  "Company tax filing",
+  "Company tax clearance",
 ];

@@ -4,10 +4,9 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="px-10">
-      Home page
-      {/* <PricingSection />
-      <TestimonialSection />; */}
+    <div className="">
+      <PricingSection />
+      <TestimonialSection />;
     </div>
   );
 };
