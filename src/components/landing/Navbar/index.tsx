@@ -2,7 +2,8 @@
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+// import { ChevronDown } from "@heroicons/react/20/solid";
+import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { callsToAction, company, products } from "./constants";
 import Logo from "@/assets/icons/logo.svg";
@@ -46,9 +47,9 @@ export default function Navbar() {
 					<Popover className="relative">
 						<Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
 							Product
-							<ChevronDownIcon
-								className="h-5 w-5 flex-none text-gray-400"
-								aria-hidden="true"
+							<ChevronDown
+								// className="h-5 w-5 flex-none text-gray-400"
+								// aria-hidden="true"
 							/>
 						</Popover.Button>
 
@@ -124,9 +125,9 @@ export default function Navbar() {
 					<Popover className="relative">
 						<Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
 							Company
-							<ChevronDownIcon
-								className="h-5 w-5 flex-none text-gray-400"
-								aria-hidden="true"
+							<ChevronDown
+								// className="h-5 w-5 flex-none text-gray-400"
+								// aria-hidden="true"
 							/>
 						</Popover.Button>
 
@@ -198,14 +199,14 @@ export default function Navbar() {
 										<>
 											<Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
 												Product
-												<ChevronDownIcon
-													className={classNames(
-														open
-															? "rotate-180"
-															: "",
-														"h-5 w-5 flex-none"
-													)}
-													aria-hidden="true"
+												<ChevronDown
+													// className={classNames(
+													// 	open
+													// 		? "rotate-180"
+													// 		: "",
+													// 	"h-5 w-5 flex-none"
+													// )}
+													// aria-hidden="true"
 												/>
 											</Disclosure.Button>
 											<Disclosure.Panel className="mt-2 space-y-2">
@@ -245,14 +246,14 @@ export default function Navbar() {
 										<>
 											<Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
 												Company
-												<ChevronDownIcon
-													className={classNames(
-														open
-															? "rotate-180"
-															: "",
-														"h-5 w-5 flex-none"
-													)}
-													aria-hidden="true"
+												<ChevronDown
+													// className={classNames(
+													// 	open
+													// 		? "rotate-180"
+													// 		: "",
+													// 	"h-5 w-5 flex-none"
+													// )}
+													// aria-hidden="true"
 												/>
 											</Disclosure.Button>
 											<Disclosure.Panel className="mt-2 space-y-2">

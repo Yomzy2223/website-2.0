@@ -6,7 +6,7 @@ import ArrowRight from "@/assets/icons/Arrow-right.svg";
 import ArrowRightIcon from "@/assets/icons/arrowRight";
 import { Button } from "@/components/ui/button";
 import HeroImage from "@/assets/images/hero-image.png"
-import Logo from "@/assets/icons/logo.svg";
+import Logo from "@/assets/icons/logo.svg"
 
 const heroText = [
   "Register",
