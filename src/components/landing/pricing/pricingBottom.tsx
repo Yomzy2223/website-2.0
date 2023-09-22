@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import illustration from "@/assets/images/illustration.png";
 import ellipse1 from "@/assets/images/ellipse1.png";
 import ellipse2 from "@/assets/images/ellipse2.png";
@@ -7,11 +7,14 @@ import RocketIcon from "@/assets/icons/rocket";
 import { useSearchParams } from "next/navigation";
 import { normalize } from "@/lib/globalFunctions";
 import { supportedCountries } from "@/lib/supportedCountries";
+import { pricingStateType } from "./constants";
 
-const PricingBottom = () => {
-  const searchParams = useSearchParams();
-  const selectedPackage = normalize(searchParams.get("package") || "basic");
-  const selectedCountry = normalize(searchParams.get("country") || "nigeria");
+const PricingBottom = ({ pricingState }: pricingStateType) => {
+  const selectedCountry = pricingState.country;
+  const selectedPackage = pricingState.package;
+  // const searchParams = useSearchParams();
+  // const selectedPackage = normalize(searchParams.get("package") || "basic");
+  // const selectedCountry = normalize(searchParams.get("country") || "nigeria");
 
   const countryInfo = supportedCountries.find(
     (el) => normalize(el.name) === normalize(selectedCountry || "")

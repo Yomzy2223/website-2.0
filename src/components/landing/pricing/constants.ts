@@ -35,3 +35,20 @@ export const features = [
   "Company tax filing",
   "Company tax clearance",
 ];
+
+export interface handlePricingType {
+  selectedPackage?: string;
+  selectedCountry?: string;
+}
+export interface pricingStateType {
+  pricingState: {
+    country: string;
+    package: string;
+  };
+}
+export interface middlePropType extends pricingStateType {
+  handlePricing: ({
+    selectedPackage,
+    selectedCountry,
+  }: handlePricingType) => void;
+}

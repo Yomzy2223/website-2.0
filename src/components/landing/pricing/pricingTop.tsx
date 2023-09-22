@@ -3,10 +3,10 @@ import { useSearchParams } from "next/navigation";
 import React from "react";
 import { Button } from "../../ui/button";
 
-const PricingTop = () => {
-  const searchParams = useSearchParams();
-  const selectedCountry =
-    normalize(searchParams.get("country") || "") || undefined;
+const PricingTop = ({ selectedCountry }: { selectedCountry: string }) => {
+  // const searchParams = useSearchParams();
+  // const selectedCountry =
+  //   normalize(searchParams.get("country") || "") || undefined;
 
   return (
     <div className="flex  justify-between">

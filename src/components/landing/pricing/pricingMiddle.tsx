@@ -6,26 +6,31 @@ import { useSearchParams } from "next/navigation";
 import React from "react";
 import CMSelect from "../../cmSelect";
 import { Button } from "../../ui/button";
+import { handlePricingType, middlePropType } from "./constants";
 
-const PricingMiddle = () => {
-  const { setQuery } = useGlobalFucntions();
-  const searchParams = useSearchParams();
-  const selectedPackage = normalize(searchParams.get("package") || "basic");
-  const selectedCountry = normalize(searchParams.get("country") || "nigeria");
+const PricingMiddle = ({ pricingState, handlePricing }: middlePropType) => {
+  // const { setQuery } = useGlobalFucntions();
+  // const searchParams = useSearchParams();
+  // const selectedPackage = normalize(searchParams.get("package") || "basic");
+  // const selectedCountry = normalize(searchParams.get("country") || "nigeria");
 
   const selectCountry = (selected: any) => {
-    setQuery("country", normalize(selected?.props?.children[2]) || "");
+    // setQuery("country", normalize(selected?.props?.children[2]) || "");
+    handlePricing({
+      selectedCountry: normalize(selected?.props?.children[2]),
+    });
   };
 
   const handlePackageSelect = (selected: string) => {
-    setQuery("package", normalize(selected) || "");
+    // setQuery("package", normalize(selected) || "");
+    handlePricing({ selectedPackage: normalize(selected) });
   };
 
   const countries = getCountriesInfo();
   const country = countries.find(
     (el) =>
       el?.props?.children[2] ===
-      getCountriesInfo(selectedCountry)[0]?.props?.children[2]
+      getCountriesInfo(pricingState.country)[0]?.props?.children[2]
   );
 
   return (
@@ -33,8 +38,8 @@ const PricingMiddle = () => {
       <CMSelect
         options={countries}
         placeholder="Select country"
-        value={selectedCountry ? country : undefined}
-        defaultValue={selectedCountry}
+        value={pricingState.country ? country : undefined}
+        defaultValue={pricingState.country}
         handleSelect={selectCountry}
       />
       <div className="flex items-center gap-4">
@@ -42,7 +47,9 @@ const PricingMiddle = () => {
           <Button
             key={i}
             onClick={() => handlePackageSelect(el)}
-            variant={selectedPackage === normalize(el) ? "default" : "outline"}
+            variant={
+              pricingState.package === normalize(el) ? "default" : "outline"
+            }
             className="rounded-[40px]"
           >
             {el}

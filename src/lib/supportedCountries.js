@@ -1,4 +1,14 @@
-import nigeriaFlag from "@/assets/icons/nigeria-flag.svg";
+import {
+  Nigeria,
+  Kenya,
+  SouthAfrica,
+  Uganda,
+  Tanzania,
+  Algeria,
+  Ethiopia,
+  Albania,
+  Andorra,
+} from "@/assets/flags";
 
 export const supportedCountries = [
   {
@@ -23,7 +33,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Nigeria,
   },
   {
     name: "Kenya",
@@ -47,7 +57,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Kenya,
   },
   {
     name: "South Africa",
@@ -71,7 +81,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: SouthAfrica,
   },
   {
     name: "Delaware",
@@ -95,7 +105,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Nigeria,
   },
   {
     name: "Ghana",
@@ -119,7 +129,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Nigeria,
   },
   {
     name: "Uganda",
@@ -143,7 +153,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Uganda,
   },
   {
     name: "Tanzania",
@@ -167,7 +177,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Tanzania,
   },
   {
     name: "Rwanda",
@@ -191,7 +201,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Nigeria,
   },
   {
     name: "Zambia" /**/,
@@ -215,7 +225,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Nigeria,
   },
   {
     name: "Ivory Coast (Côte d'Ivoire)",
@@ -239,7 +249,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Nigeria,
   },
   {
     name: "Senegal",
@@ -263,7 +273,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Nigeria,
   },
   {
     name: "Democratic Republic of Congo",
@@ -287,7 +297,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Nigeria,
   },
   {
     name: "Algeria",
@@ -311,7 +321,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Algeria,
   },
   {
     name: "Angola",
@@ -335,7 +345,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Nigeria,
   },
   {
     name: "Ethiopia",
@@ -359,7 +369,7 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Ethiopia,
   },
   {
     name: "Malawi",
@@ -383,6 +393,6 @@ export const supportedCountries = [
       bankTimeline: "3 Days",
       taxTimeline: "3 Days",
     },
-    flag: nigeriaFlag,
+    flag: Nigeria,
   },
 ];

@@ -79,7 +79,7 @@ const TestimonialSection = () => {
   }, []);
 
   return (
-    <div className="space-y-28 px-14 pb-8 pt-28 bg-[#ccf3ff33]">
+    <div className="space-y-28 pb-8 pt-28 bg-[#ccf3ff33]">
       <div className="flex flex-col items-center gap-10 max-w-[min(700px,80%)] m-auto">
         <p className="font-semibold text-gray4 text-lg">What our users say</p>
         <p className="font-bold text-4xl text-center text-gray3">
