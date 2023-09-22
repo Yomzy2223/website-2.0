@@ -11,11 +11,11 @@ interface propType {
 const SwipeContent = ({ image, handle, name, description }: propType) => {
   return (
     <SwiperSlide>
-      <Image src={image} alt="" className="w-max h-auto" />
+      <Image src={image} alt="" className="w-auto h-52" />
       <div className="max-w-[650px] !mt-0">
-        <p className="text-[#444] font-normal text-base mb-4">{handle}</p>
-        <p className="text-[#444] font-semibold text-xl mb-6">{name}</p>
-        <p className="text-primary-gray3 text-base">{description}</p>
+        <p className="text-gray3 font-normal text-base mb-4">{handle}</p>
+        <p className="text-gray3 font-semibold text-xl mb-6">{name}</p>
+        <p className="text-gray3 text-base">{description}</p>
       </div>
     </SwiperSlide>
   );

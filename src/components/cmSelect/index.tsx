@@ -23,11 +23,11 @@ const CMSelect = ({
 }: {
   label?: string;
   placeholder: string;
-  options: string[];
+  options: any[];
   handleSelect?: (v: any) => void;
   className?: { trigger?: string };
   defaultValue?: string;
-  value?: string;
+  value: any;
 }) => {
   return (
     <Select
@@ -37,13 +37,13 @@ const CMSelect = ({
     >
       <SelectTrigger
         className={cn(
-          "w-full max-w-[300px] rounded-lg border-l-4 border-border ",
+          "w-full max-w-[300px] rounded-lg border-l-4 border-border",
           className?.trigger
         )}
       >
         <SelectValue placeholder={placeholder} />
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent className="max-h-[300px] overflow-auto">
         <SelectGroup>
           <SelectLabel>{label}</SelectLabel>
           {options.map((option, i) => (
