@@ -7,17 +7,16 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="px-14">
-      <div>
+    <div>
+      <div className="px-14">
         <HomeHeaderComponent />
         <PricingSection />
-        <TestimonialSection />;
+      </div>
+      <div className="px-14 py-8">
         <ContactSection />
       </div>
-      <div>
-        <Footer />
-      </div>
-      */
+      <TestimonialSection />
+      <Footer />
     </div>
   );
 };

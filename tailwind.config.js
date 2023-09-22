@@ -21,6 +21,7 @@ module.exports = {
         gray4: "hsl(var(--gray4))",
         gray5: "hsl(var(--gray5))",
         gray6: "hsl(var(--gray6))",
+        gray8: "hsl(var(--gray8))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
