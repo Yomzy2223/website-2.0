@@ -2,7 +2,7 @@
 
 import React from "react";
 import { steps } from "./constants";
-import { Separator } from "../ui/separator";
+import { Separator } from "../../ui/separator";
 import PricingTop from "./pricingTop";
 import PricingMiddle from "./pricingMiddle";
 import PricingBottom from "./pricingBottom";
@@ -10,12 +10,12 @@ import PricingFeatures from "./pricingFeatures";
 
 const PricingSection = () => {
   return (
-    <div className="space-y-20 px-14">
-      <div className="flex flex-col items-center gap-4">
+    <div className="space-y-20 px-14 pb-8 mt-28">
+      <div className="flex flex-col items-center gap-4 max-w-[min(700px,80%)] m-auto">
         <h2 className="text-center text-4xl text-gray3 font-bold ">
           Register your business faster
         </h2>
-        <p className="text-center text-gray4 max-w-[min(700px,80%)]">
+        <p className="text-center text-gray4">
           Launch is faster and cheaper than alternatives, helping you save up to
           25% in fees and 40% in go-to-market time.
         </p>

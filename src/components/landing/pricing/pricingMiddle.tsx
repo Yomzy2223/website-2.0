@@ -4,8 +4,8 @@ import { supportedCountries } from "@/lib/supportedCountries";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import React from "react";
-import CMSelect from "../cmSelect";
-import { Button } from "../ui/button";
+import CMSelect from "../../cmSelect";
+import { Button } from "../../ui/button";
 
 const PricingMiddle = () => {
   const { setQuery } = useGlobalFucntions();

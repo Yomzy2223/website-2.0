@@ -1,7 +1,7 @@
 import { normalize } from "@/lib/globalFunctions";
 import { useSearchParams } from "next/navigation";
 import React from "react";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 
 const PricingTop = () => {
   const searchParams = useSearchParams();
@@ -19,7 +19,8 @@ const PricingTop = () => {
         </p>
       </div>
       <Button className="gap-2 whitespace-nowrap " variant="pattern">
-        Register in {selectedCountry} <span aria-hidden="true">→</span>
+        Register in <span className="capitalize">{selectedCountry} </span>
+        <span aria-hidden="true">→</span>
       </Button>
     </div>
   );
