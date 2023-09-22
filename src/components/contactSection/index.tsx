@@ -7,7 +7,7 @@ import { MessengerBlue, TelegramBlue, WhatsappBlue } from "@/assets/socials";
 
 export default function ContactSection() {
   return (
-    <div className="bg-[#282929] w-full h-[464px] rounded-[24px] overflow-hidden relative">
+    <div className="bg-[#282929] w-full h-[380px] rounded-[24px] overflow-hidden relative">
       <Image src={Lines} alt="" />
       <div className="absolute top-0 left-0 flex justify-between w-full h-full text-white">
         <div className="flex flex-col justify-center mx-10 max-w-[722px]">
@@ -48,7 +48,7 @@ export default function ContactSection() {
             src={Mo}
             alt={"smiling employee"}
             quality={100}
-            className="w-[448px] h-[464px] "
+            className="w-auto h-full object-contain"
           />
         </div>
       </div>
