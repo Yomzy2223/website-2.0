@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div>
       <div>
-        <Navbar/>
+        <Navbar />
       </div>
       <div className="px-14">
         <HomeHeaderComponent />
