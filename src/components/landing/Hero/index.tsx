@@ -6,8 +6,12 @@ import ArrowRight from "@/assets/icons/Arrow-right.svg";
 import ArrowRightIcon from "@/assets/icons/arrowRight";
 import { Button } from "@/components/ui/button";
 import HeroImage from "@/assets/images/hero-image.png"
-import Logo from "@/assets/icons/logo.svg";
-
+import LogoArifu from "@/assets/images/logo-arifu.png"
+import LogoEdu from "@/assets/images/logo-arifu.png"
+import LogoPayqin from "@/assets/images/logo-payqin.png"
+import LogoSeamlessHr from "@/assets/images/logo-seamlesshr.png"
+import LogoSpleet from "@/assets/images/logo-spleet.png"
+import Logo54gene from "@/assets/images/logo-54gene.png"
 const heroText = [
   "Register",
   "Bank",
@@ -139,7 +143,7 @@ export default function HomeHeaderComponent() {
                   <li>
                     <Image
                       className="max-h-12 w-full object-contain"
-                      src="https://res.cloudinary.com/soss/image/upload/v1631100661/Sidebrief%20Assets/logo-arifu_wcjwkv.png"
+                      src={LogoArifu}
                       alt="Arifu"
                       width={128}
                       height={38}
@@ -149,7 +153,7 @@ export default function HomeHeaderComponent() {
                   <li>
                     <Image
                         className="max-h-12 w-full object-contain"
-                        src="https://res.cloudinary.com/soss/image/upload/v1631100661/Sidebrief%20Assets/logo-54gene_bseu02.png"
+                        src={Logo54gene}
                         alt="54gene"
                         width={128}
                         height={38}
@@ -159,7 +163,7 @@ export default function HomeHeaderComponent() {
                   <li>
                     <Image
                         className="max-h-12 w-full object-contain"
-                        src="https://res.cloudinary.com/soss/image/upload/v1631100661/Sidebrief%20Assets/logo-edubridge_lyhr9z.png"
+                        src={LogoEdu}
                         alt="Edubridge"
                         width={128}
                         height={38}
@@ -169,7 +173,7 @@ export default function HomeHeaderComponent() {
                   <li>
                     <Image
                         className="max-h-12 w-full object-contain"
-                        src="https://res.cloudinary.com/soss/image/upload/v1631100662/Sidebrief%20Assets/logo-seamlesshr_fuh8ye.png"
+                        src={LogoSeamlessHr}
                         alt="SeamlessHR"
                         width={128}
                         height={38}
@@ -179,7 +183,7 @@ export default function HomeHeaderComponent() {
                   <li>
                     <Image
                         className="max-h-12 w-full object-contain"
-                        src="https://res.cloudinary.com/soss/image/upload/v1631100662/Sidebrief%20Assets/logo-payqin_lg4zwc.png"
+                        src={LogoPayqin}
                         alt="PayQin"
                         width={128}
                         height={38}
@@ -189,7 +193,7 @@ export default function HomeHeaderComponent() {
                   <li>
                     <Image
                         className="max-h-12 w-full object-contain"
-                        src="https://res.cloudinary.com/soss/image/upload/v1631100662/Sidebrief%20Assets/logo-spleet_nvggfx.png"
+                        src={LogoSpleet}
                         alt="Spleet"
                         width={128}
                         height={38}
