@@ -39,7 +39,7 @@ const PricingBottom = ({ pricingState }: pricingStateType) => {
   ];
 
   return (
-    <div className="flex">
+    <div className="flex" data-aos="fade-in">
       <div className="flex flex-col justify-between items-center gap-6 flex-1 bg-primary relative max-w-[400px] p-6 overflow-hidden rounded-lg rounded-r-none border border-primary border-r-0 ">
         <Image src={illustration} alt="" className="absolute right-0 z-0 " />
         <Image src={ellipse1} alt="" className="absolute left-0 top-0 z-0" />
@@ -66,12 +66,19 @@ const PricingBottom = ({ pricingState }: pricingStateType) => {
         </p>
       </div>
 
-      <div className="flex flex-col items-center justify-between flex-1 bg-border border border-primary border-l-0 rounded-lg rounded-l-none p-6">
-        <div className="flex gap-2 items-center">
+      <div className="flex flex-col items-center justify-between flex-1 bg-border border border-primary border-l-0 rounded-lg rounded-l-none p-6 relative">
+        <Image src={illustration} alt="" className="absolute right-0 z-0 " />
+        <Image src={ellipse1} alt="" className="absolute left-0 top-0 z-0" />
+        <Image
+          src={ellipse2}
+          alt=""
+          className="absolute right-0 bottom-0 z-0"
+        />
+        <div className="flex gap-2 items-center z-10">
           <RocketIcon classNames={{ path: "fill-primary" }} />
           <span className="text-gray3 text-sm font-semibold">Timelines</span>
         </div>
-        <div className="flex justify-between w-full">
+        <div className="flex justify-between w-full z-10">
           {timelineInfo.map((el, i) => (
             <div
               key={i}

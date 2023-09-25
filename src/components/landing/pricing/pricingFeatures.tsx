@@ -4,7 +4,7 @@ import { features } from "./constants";
 
 const PricingFeatures = () => {
   return (
-    <div>
+    <div data-aos="fade-in">
       <p className="text-primary mb-8">What you’ll get includes:</p>
       <ul className="grid grid-rows-3 grid-cols-2 gap-6 gapx max-w-[600px]">
         {features.map((el, i) => (

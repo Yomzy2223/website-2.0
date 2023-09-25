@@ -6,12 +6,15 @@ import { buttonVariants } from "../ui/button";
 
 export default function Footer() {
   return (
-    <div className="bg-[#061419] px-14 w-full py-16 text-white">
+    <div className="bg-[#061419] px-14 w-full pt-16 pb-8 text-white">
       <div className="flex justify-between">
-        <div>
+        <div data-aos="fade-in">
           <Image src={Logo} alt="sidebrief" />
         </div>
-        <div className="flex w-full max-w-[60%] justify-between">
+        <div
+          className="flex w-full max-w-[60%] justify-between"
+          data-aos="fade-in"
+        >
           {footerLinks.map((el, i) => (
             <div key={i} className="space-y-4">
               <h6 className="text-base font-semibold">{el.title}</h6>
@@ -34,7 +37,10 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <div className="flex mt-[53px] mb-[64px] justify-between flex-wrap gap-3 border-y py-6">
+      <div
+        className="flex mt-[53px] mb-[64px] justify-between flex-wrap gap-3 border-y py-6"
+        data-aos="fade-in"
+      >
         {countries.map((country, i) => (
           <div key={i} className="flex gap-3 items-center">
             <Image

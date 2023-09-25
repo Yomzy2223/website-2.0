@@ -9,22 +9,32 @@ export const steps = [
   {
     text: "Create account",
     icon: RocketIcon,
+    aos: "fade-up",
+    delay: "0",
   },
   {
     text: "Select country",
     icon: CountryIcon,
+    aos: "fade-up",
+    delay: "500",
   },
   {
     text: "Select business plan",
     icon: BusinessPlanIcon,
+    aos: "fade-up",
+    delay: "1000",
   },
   {
     text: "Pay and fill your form",
     icon: PayIcon,
+    aos: "fade-up",
+    delay: "1500",
   },
   {
     text: "Get your documents",
     icon: CheckIcon,
+    aos: "fade-up",
+    delay: "2000",
   },
 ];
 

@@ -80,13 +80,16 @@ const TestimonialSection = () => {
 
   return (
     <div className="space-y-28 pb-14 pt-28 bg-[#ccf3ff33]">
-      <div className="flex flex-col items-center gap-6 max-w-[min(700px,80%)] m-auto">
+      <div
+        className="flex flex-col items-center gap-6 max-w-[min(700px,80%)] m-auto"
+        data-aos="fade-in"
+      >
         <p className="font-semibold text-gray4 text-lg">What our users say</p>
         <p className="font-bold text-4xl text-center text-gray3">
           From the thousand of users who have used our platform
         </p>
       </div>
-      <div className="my-24">
+      <div className="my-24" data-aos="fade-in">
         <SwiperContainer>
           <SwiperWrapper>
             {testimonials.map((el, i) => (

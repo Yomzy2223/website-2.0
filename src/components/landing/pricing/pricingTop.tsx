@@ -9,7 +9,7 @@ const PricingTop = ({ selectedCountry }: { selectedCountry: string }) => {
   //   normalize(searchParams.get("country") || "") || undefined;
 
   return (
-    <div className="flex  justify-between">
+    <div className="flex  justify-between" data-aos="fade-in">
       <div className=" w-full">
         <p className="text-gray3 font-semibold">
           Get estimated timeline in seconds

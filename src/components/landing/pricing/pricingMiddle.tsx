@@ -34,7 +34,7 @@ const PricingMiddle = ({ pricingState, handlePricing }: middlePropType) => {
   );
 
   return (
-    <div className="flex gap-8">
+    <div className="flex gap-8" data-aos="fade-in">
       <CMSelect
         options={countries}
         placeholder="Select country"

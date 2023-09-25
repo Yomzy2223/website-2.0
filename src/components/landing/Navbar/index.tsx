@@ -1,11 +1,13 @@
 "use client";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 // import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 // import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import { callsToAction, company, products } from "./constants";
 import Logo from "@/assets/icons/logo.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -13,6 +15,14 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of animations in milliseconds
+      easing: "ease-in-out", // Easing for animations
+      once: true, // Whether animations should only happen once
+    });
+  }, []);
 
   return (
     <header className="bg-white">

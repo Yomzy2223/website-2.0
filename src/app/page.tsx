@@ -1,13 +1,24 @@
+"use client";
+
 import ContactSection from "@/components/contactSection";
 import HomeHeaderComponent from "@/components/landing/Hero";
 import PricingSection from "@/components/landing/pricing";
 import TestimonialSection from "@/components/landing/testimonial";
 import Footer from "@/components/footerSection";
-import LogoCloud from "@/components/landing/Logos";
 import Navbar from "@/components/landing/Navbar";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HomePage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of animations in milliseconds
+      easing: "ease-in-out", // Easing for animations
+      once: false, // Whether animations should only happen once
+    });
+  }, []);
+
   return (
     <div>
       <div>
