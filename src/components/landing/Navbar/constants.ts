@@ -1,41 +1,42 @@
 import {
-	ChartPieIcon,
-	CursorArrowRaysIcon,
-	FingerPrintIcon,
-	SquaresPlusIcon,
-} from "@heroicons/react/24/outline";
-import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
+	PieChart,
+	MousePointerClick,
+	Fingerprint,
+	MessageSquarePlus,
+	Phone,
+	PlayCircleIcon,
+} from "lucide-react"
 
 export const products = [
 	{
 		name: "Launch",
 		description: "Register and manage your business",
 		href: "#",
-		icon: ChartPieIcon,
+		icon: PieChart,
 	},
 	{
 		name: "Shield",
 		description: "Register your trademarks, copyright and patent",
 		href: "#",
-		icon: CursorArrowRaysIcon,
+		icon: MousePointerClick,
 	},
 	{
 		name: "Comply",
 		description: "Manage your business compliance",
 		href: "#",
-		icon: FingerPrintIcon,
+		icon: Fingerprint,
 	},
 	{
 		name: "Taxby",
 		description: "Automate business tax filings and reporting",
 		href: "#",
-		icon: SquaresPlusIcon,
+		icon: MessageSquarePlus,
 	},
 ];
 
 export const callsToAction = [
 	{ name: "Watch demo", href: "#", icon: PlayCircleIcon },
-	{ name: "Contact sales", href: "#", icon: PhoneIcon },
+	{ name: "Contact sales", href: "#", icon: Phone },
 ];
 
 export const company = [
