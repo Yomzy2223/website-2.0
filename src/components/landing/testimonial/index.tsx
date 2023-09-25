@@ -35,7 +35,7 @@ const TestimonialSection = () => {
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
       },
-      effect: "cards",
+      // effect: "cards",
       cardsEffect: {
         perSlideOffset: 8,
         perSlideRotate: 6,
