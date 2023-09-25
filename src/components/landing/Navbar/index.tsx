@@ -4,6 +4,8 @@ import Image from "next/image";
 import { callsToAction, company, products } from "./constants";
 import Logo from "@/assets/icons/logo.svg";
 
+import { ChevronDown, Menu } from "lucide-react";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,8 +13,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import { Button } from "@/components/ui/button";
-import { ChevronDown, Menu } from "lucide-react";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,7 +25,7 @@ export default function Navbar() {
         className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Sidebrief</span>
             <Image
@@ -47,13 +49,13 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="hidden pr-36 pt-2 lg:flex lg:gap-x-8">
+        <div className="hidden pt-2 lg:flex lg:gap-x-8">
           <DropdownMenu>
-            <DropdownMenuTrigger>
-              <Button variant="ghost">
-                Products
-                <ChevronDown />
-              </Button>
+            <DropdownMenuTrigger
+              className={cn(buttonVariants({ variant: "ghost" }))}
+            >
+              Products
+              <ChevronDown width={16} height={16} />
             </DropdownMenuTrigger>
 
             <DropdownMenuContent>
@@ -103,23 +105,27 @@ export default function Navbar() {
           </DropdownMenu>
 
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost">Features</Button>
+            <DropdownMenuTrigger
+              className={cn(buttonVariants({ variant: "ghost" }))}
+            >
+              Features
             </DropdownMenuTrigger>
           </DropdownMenu>
 
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost">Partners</Button>
+            <DropdownMenuTrigger
+              className={cn(buttonVariants({ variant: "ghost" }))}
+            >
+              Partners
             </DropdownMenuTrigger>
           </DropdownMenu>
 
           <DropdownMenu>
-            <DropdownMenuTrigger>
-              <Button variant="ghost">
-                Company
-                <ChevronDown />
-              </Button>
+            <DropdownMenuTrigger
+              className={cn(buttonVariants({ variant: "ghost" }))}
+            >
+              Company
+              <ChevronDown width={16} height={16} />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem>
@@ -140,7 +146,7 @@ export default function Navbar() {
         </div>
 
         <div>
-          <Button variant="pattern">Log In</Button>
+          <Button variant="starter">Get Started</Button>
         </div>
       </nav>
     </header>

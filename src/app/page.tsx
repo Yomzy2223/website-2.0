@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 const HomePage = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of animations in milliseconds
+      duration: 500, // Duration of animations in milliseconds
       easing: "ease-in-out", // Easing for animations
       once: false, // Whether animations should only happen once
     });
