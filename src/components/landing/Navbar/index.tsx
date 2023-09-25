@@ -152,9 +152,13 @@ export default function Navbar() {
 				</div>
 
 				<div>
-					<Button variant="pattern">
+					{/* <Button variant="pattern">
 						Log In
+					</Button> */}
+					<Button variant="starter">
+						Get Started
 					</Button>
+
 				</div>
 			</nav>
 		</header>
