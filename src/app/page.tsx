@@ -15,7 +15,7 @@ const HomePage = () => {
     AOS.init({
       duration: 500, // Duration of animations in milliseconds
       easing: "ease-in-out", // Easing for animations
-      once: false, // Whether animations should only happen once
+      once: true, // Whether animations should only happen once
     });
   }, []);
 
